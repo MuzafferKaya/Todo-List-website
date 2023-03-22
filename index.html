@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar listesi</title>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center text-primary mt-5 mb-3">Yapılacaklar listesi</h1>
+        <div class="row">
+            <div class="col text-end align-self-center">
+                <label for="" class="form-label">Yeni görev</label>
+            </div>
+            <div class="col">
+                <input type="text" id="txt" class="form-control">
+            </div>
+            <div class="col">
+                <button class="btn btn-success" onclick="ekle()">Ekle</button>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <h2 class="text-center text-primary mb-3">Yapılacaklar</h2>
+                <ul class="list-group" id="yapilacaklar"></ul>
+            </div>
+            <div class="col">
+                <h2 class="text-center text-primary mb-3">Biten Görevler</h2>
+                <ul class="list-group" id="yapildi"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
